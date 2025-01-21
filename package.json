@@ -1,0 +1,20 @@
+{
+  "name": "sba318expressapp",
+  "version": "1.0.0",
+  "description": "Per Scholas SBA 318: Express Server Application",
+  "main": "service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon service.js"
+  },
+  "keywords": [
+    "Express",
+    "Node"
+  ],
+  "author": "Mohamed Hamouda",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}
