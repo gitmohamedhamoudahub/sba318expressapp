@@ -2,24 +2,22 @@ const express = require('express');
 const app = express();
 PORT = 3333;
 
-const allCompanies = require('./data/companies');
+// const allCompanies = require('./data/companies');
+
+const companiesRouter = require('./routes/companies.js');
 
 
 app.get('/api/v1',(request,response)=>{
-    response.status(200).send('Root is here!');
+    response.status(200).send('Business List Called!');
 });
 
-app.get('/api/v1/companies', (request,response) => {
-    response.status(200).send(allCompanies);    
-});
-
-app.get('/api/v1/companies/:companyID', (request,response) => {
-    const company = allCompanies.filter(company => company.id == request.params.companyID)
-    response.status(200).send(company);     
-});
+app.use(companiesRouter);
 
 
-
+// app.use((err, request, response, next) => {
+//     console.error(err.message); 
+//     response.status(500).json({ error: err.message }); 
+// });
 
 app.listen(PORT,() =>{
     console.log(`Server is listening on port ${PORT}`);
