@@ -7,16 +7,13 @@ const companies = [
     "Phone1": "+1234567890",
     "Phone2": "+0987654321",
     "Website": "https://www.example.com",
-    "isConsultant": true, // true or false
-    "isSellerRetail": true, // true or false
-    "isSellerWholesale": false, // true or false
-    "hasInternationalShipping": true, // true or false
-    "hasLocalShipping": true, // true or false
-    "isVerifiedBusiness": false, // true or false
-    "images": [
-        "uploads/image1.jpg", // Path to image 1
-        "uploads/image2.jpg"  // Path to image 2
-    ]
+    "isConsultant": true, 
+    "isSellerRetail": true, 
+    "isSellerWholesale": false, 
+    "hasInternationalShipping": true, 
+    "hasLocalShipping": true, 
+    "isVerifiedBusiness": false, 
+    "logoURL":  "uploads/image1.jpg"
 },
 {
     "id": 2,
@@ -24,16 +21,13 @@ const companies = [
     "Phone1": "+1234567890",
     "Phone2": "+0987654321",
     "Website": "https://www.example.com",
-    "isConsultant": true, // true or false
-    "isSellerRetail": true, // true or false
-    "isSellerWholesale": false, // true or false
-    "hasInternationalShipping": true, // true or false
-    "hasLocalShipping": true, // true or false
-    "isVerifiedBusiness": false, // true or false
-    "images": [
-        "uploads/image1.jpg", // Path to image 1
-        "uploads/image2.jpg"  // Path to image 2
-    ]
+    "isConsultant": true, 
+    "isSellerRetail": true, 
+    "isSellerWholesale": false, 
+    "hasInternationalShipping": true, 
+    "hasLocalShipping": true, 
+    "isVerifiedBusiness": false, 
+    "logoURL":  "uploads/image1.jpg"
 },
 {
     "id": 3,
@@ -41,16 +35,14 @@ const companies = [
     "Phone1": "+1234567890",
     "Phone2": "+0987654321",
     "Website": "https://www.example.com",
-    "isConsultant": true, // true or false
-    "isSellerRetail": true, // true or false
-    "isSellerWholesale": false, // true or false
-    "hasInternationalShipping": true, // true or false
-    "hasLocalShipping": true, // true or false
-    "isVerifiedBusiness": false, // true or false
-    "images": [
-        "uploads/image1.jpg", // Path to image 1
-        "uploads/image2.jpg"  // Path to image 2
-    ]
+    "isConsultant": true, 
+    "isSellerRetail": true, 
+    "isSellerWholesale": false, 
+    "hasInternationalShipping": true, 
+    "hasLocalShipping": true, 
+    "isVerifiedBusiness": false, 
+    "logoURL":  "uploads/image1.jpg"
+       
 }
     ];
 

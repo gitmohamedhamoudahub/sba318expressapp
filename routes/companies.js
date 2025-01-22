@@ -7,16 +7,27 @@ router.get('/api/v1/companies', (request,response) => {
     response.status(200).send(allCompanies);    
 });
 
-router.get('/api/v1/companies/:companyID', (request,response) => {
+router.get('/api/v1/admin/companies', (request,response) => {
+    response.status(200).send(allCompanies);    
+});
+
+router.get('/api/v1/admin/companies/:companyID', (request,response) => {
     const company = allCompanies.filter(company => company.id == request.params.companyID)
     response.status(200).send(company);     
 });
 
-// router.delete('/api/v1/companies/:companyID', (request,response) => {
-//     //const company = allCompanies.delete(company => company.id == request.params.companyID)
-//     // response.send('Deleted company ' + company.id + '-' + company.name );     
-//     console.log('Delete company ' + company.id + '-' + company.name);
-//     response.status(204).send('');
-// });
+router.put('/api/v1/admin/companies/:companyID', (request , response) => {
+    //const company = allCompanies.delete(company => company.id == request.params.companyID)
+    // response.send('Deleted company ' + company.id + '-' + company.name );     
+    console.log('Update company ');
+    response.status(200).send('');
+});
+
+router.delete('/api/v1/admin/companies/:companyID', (request , response) => {
+    //const company = allCompanies.delete(company => company.id == request.params.companyID)
+    // response.send('Deleted company ' + company.id + '-' + company.name );     
+    console.log('Delete company ');
+    response.status(200).send('');
+});
 
 module.exports = router;
