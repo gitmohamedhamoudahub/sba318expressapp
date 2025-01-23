@@ -11,6 +11,7 @@ The API to manage companies list
 normal user routes
 ****************************************************************
 1- list all companies with all details
+2- list all FAQ
 
 Admin routes
 ****************************************************************
@@ -19,3 +20,9 @@ Admin routes
 3- Get company information by id
 4- Update company
 5- Delete company
+6- Add FAQ
+7- Delete FAQ
+8- Get all users
+9- Get user by userid
+10-Delete User
+11-Update User 
