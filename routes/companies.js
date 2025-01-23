@@ -12,6 +12,36 @@ router.get('/api/v1/admin/companies', (request,response) => {
     response.status(200).send(allCompanies);    
 });
 
+
+router.get('/api/v1/companies/filter', (req, res) => {
+    console.log('filter request');
+    const filters = req.query; 
+
+    console.log('Filters:', filters);
+
+    
+    const filteredCompanies = allCompanies.filter(company => {
+        return Object.keys(filters).every(key => {
+            
+            if (typeof company[key] === 'boolean') {
+                return company[key] === (filters[key] === 'true'); 
+            }
+            if (typeof company[key] === 'number') {
+                return company[key] === parseInt(filters[key]);
+            }
+            return company[key]?.toString().toLowerCase().includes(filters[key]?.toLowerCase());
+        });
+    });
+
+    if (filteredCompanies.length === 0) {
+        return res.status(404).json({
+            success: false,
+            message: 'No data found.',
+        });
+    }
+
+    res.status(200).json(filteredCompanies);
+});
 router.get('/api/v1/companies/:companyID', (request,response,next) => {
     try {
     const {body,
@@ -40,6 +70,7 @@ router.get('/api/v1/companies/:companyID', (request,response,next) => {
         next(error);
     }    
 });
+
 
 router.get('/api/v1/admin/companies/:companyID', (request,response, next) => {
     try{

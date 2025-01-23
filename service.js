@@ -10,9 +10,10 @@ const validateUser = require('./middleware/vaidation.js');
 
 app.use(express.json());
 app.use(requestLogger);
-app.use(validateUser);
+
 app.use(companiesRouter);
 app.use(faqRouter);
+app.use(validateUser);
 app.use(usersRouter);
 app.use(errorHandler);
 
