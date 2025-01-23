@@ -3,6 +3,7 @@
 const companies = [
     {
     "id": 1,
+    "CompanyName": "Company 1",
     "Address": "123 Main Street, City, Country",
     "Phone1": "+1234567890",
     "Phone2": "+0987654321",
@@ -17,6 +18,7 @@ const companies = [
 },
 {
     "id": 2,
+    "CompanyName": "Company 2",
     "Address": "123 Main Street, City, Country",
     "Phone1": "+1234567890",
     "Phone2": "+0987654321",
@@ -31,6 +33,7 @@ const companies = [
 },
 {
     "id": 3,
+    "CompanyName": "Company 3",
     "Address": "123 Main Street, City, Country",
     "Phone1": "+1234567890",
     "Phone2": "+0987654321",
